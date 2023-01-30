@@ -19,14 +19,14 @@ public class Persona {
     }
     private int idPersona;
     private String nombre;
-    private static int contadorPersonas;
+    private static int contadorPersonas;//Al incluir el valor static, es una variable que se asocia con la clase y no con los objetos
 
     public Persona(String nombre) {
 
         this.nombre = nombre;
 
         //Incrementar el contador por cada objeto nuevo
-        Persona.contadorPersonas++;
+        Persona.contadorPersonas++;//Es opcional el nombre de la clase Persona. Pero es una practica aecuada incluirla
 
         //Asignar el nuevo valor a la variable idPersona
         this.idPersona = Persona.contadorPersonas;
